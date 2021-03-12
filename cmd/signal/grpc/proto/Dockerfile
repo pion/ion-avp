@@ -1,4 +1,4 @@
-FROM golang:1.14.14-stretch as builder
+FROM golang:1.16.2-stretch as builder
 
 RUN go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
 RUN go get google.golang.org/protobuf/cmd/protoc-gen-go
